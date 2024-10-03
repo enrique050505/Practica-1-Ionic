@@ -5,6 +5,12 @@
       <ion-back-button routerLink="segunda-pagina"></ion-back-button>
       <ion-title></ion-title>
     </ion-buttons>
+    <ion-chip class="avatar">
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>Usuario</ion-label>
+    </ion-chip>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
@@ -17,9 +23,20 @@
   <app-explore-container name="tab1"></app-explore-container>
   <ion-list>
     <ion-item class="item-icon-left">
-      <ion-icon class=foto_lolo></ion-icon>
       <img [src]=foto_lolo height="200px" width="250">
       <ion-label>{{contenido_noticia1}}</ion-label>
+    </ion-item>
+    <ion-item class="ion-item-left">
+      <img [src]=foto_csgo height="200px" width="250">
+      <ion-label>{{contenido_noticia2}}</ion-label>
+    </ion-item>
+    <ion-item class="ion-item-left">
+      <img [src]=fotos_overwatch height="200px" width="250">
+      <ion-label>{{contenido_noticia3}}</ion-label>
+    </ion-item>
+    <ion-item class="ion-item-left">
+      <img [src]=foto_valorant height="200px" width="250px">
+      <ion-label>{{contenido_noticia4}}</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>
