@@ -1,13 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Tab 1</ion-title>
+    <ion-title>Noticias</ion-title>
     <ion-buttons slot="start">
       <ion-back-button routerLink="segunda-pagina"></ion-back-button>
       <ion-title></ion-title>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -16,4 +15,11 @@
   </ion-header>
 
   <app-explore-container name="tab1"></app-explore-container>
+  <ion-list>
+    <ion-item class="item-icon-left">
+      <ion-icon class=foto_lolo></ion-icon>
+      <img [src]=foto_lolo height="200px" width="250">
+      <ion-label>{{contenido_noticia1}}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
