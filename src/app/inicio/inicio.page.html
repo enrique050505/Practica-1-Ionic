@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Inicio</ion-title>
+  <ion-toolbar class="barraHerramientas" color="blue">
+    <ion-title class="titulo">INICIO</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,6 +10,10 @@
       <ion-title size="large">Inicio</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button routerLink = "/segunda-pagina">Ir a Pagina 2</ion-button>
-  <ion-button routerLink = "/tabs"> Ir a Pagina 3</ion-button>
+  <div class="botones">
+    <button routerLink = "/segunda-pagina" class="boton1">SOBRE NOSOTROS</button>
+  </div>
+  <div>
+    <button routerLink = "/tabs" class="boton2">VIDEOJUEGOS</button>
+  </div>
 </ion-content>
