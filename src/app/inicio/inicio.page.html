@@ -1,19 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="barraHerramientas" color="blue">
-    <ion-title class="titulo">INICIO</ion-title>
+    <ion-title class="titulo"> <ion-icon [name]=iconoCasa class="iconoBarraHerramientas"></ion-icon>INICIO</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="contenidoPagInicio" color="grey">
+<ion-content [fullscreen]="true" class="contenidoPagInicio" color="dark">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Inicio</ion-title>
     </ion-toolbar>
   </ion-header>
   <div class="boton1">
-    <button routerLink = "/segunda-pagina" class="botonPag1">SOBRE NOSOTROS</button>
+    <button routerLink = "/segunda-pagina" class="botonPag1">SOBRE NOSOTROS
+      <ion-icon [name]=iconoBoton1 class="iconoBoton"></ion-icon>
+    </button>
   </div>
   <div class="boton2">
-    <button routerLink = "/tabs" class="botonPag2">VIDEOJUEGOS</button>
+    <button routerLink = "/tabs" class="botonPag2">VIDEOJUEGOS
+      <ion-icon [name]=iconoBoton2 class="iconoBoton"></ion-icon>
+    </button>
+  </div>
+
+  <div class="redesSociales">
+    <h1>Conéctate con PlayVibe</h1>
+    <a [href]=enlaceInstagram target="_blank">
+      <ion-icon [name]=iconoInstagram class="instagram"></ion-icon>
+    </a>
+    <a [href]=enlaceFacebook target="_blank">
+      <ion-icon [name]=iconoFacebook class="facebook"></ion-icon>
+    </a> 
+    <a [href]=enlaceTwitter target="_blank">
+      <ion-icon [name]=iconoTwitter class="twitter"></ion-icon>
+    </a>
+    <a [href]=enlaceWhatsapp target="_blank">
+      <ion-icon [name]=iconowhatsapp class="whatsapp"></ion-icon>
+    </a>
   </div>
 </ion-content>
