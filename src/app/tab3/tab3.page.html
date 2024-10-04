@@ -1,31 +1,31 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" >
   <ion-toolbar>
+   
     <ion-title>Inicio</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-      <ion-title></ion-title>
+      <ion-back-button defaultHref="segunda-pagina" icon="chevron-back-outline" ></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="contenido">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
-  <app-explore-container name="Tab 3 page"></app-explore-container>
   <ion-list>
-    <ion-item>
+    <ion-item class="email">
       <ion-label position="floating">Email</ion-label>
       <ion-input  type="email"></ion-input>
     </ion-item>
-    <ion-item>
+    <ion-item class="contraseña">
       <ion-label position="floating">Password</ion-label>
       <ion-input  type="password"></ion-input>
     </ion-item>
   </ion-list>
-  <ion-button expand="full">Login</ion-button>
-  <ion-text color="danger"></ion-text>
-
+  <div class="boton">
+    <ion-button  expand="full">Login</ion-button>
+  </div>
+      <img [src]=img_banne  class="imag">
+    
 </ion-content>

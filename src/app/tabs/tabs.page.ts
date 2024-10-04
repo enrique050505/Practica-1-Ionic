@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 export class TabsPage {
 
   constructor() {}
-
+ control="game-controller-outline";
+ periodico="newspaper-outline";
+ login="log-in-outline";
 }

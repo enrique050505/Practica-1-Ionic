@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class Tab3Page {
 
   constructor() {}
-
+  img_banne="https://th.bing.com/th/id/OIG1.Lv_ozM.zwcYxORMiK3o3?pid=ImgGn";
 }
