@@ -28,4 +28,7 @@ export class Tab2Page {
   text_minecraft="Minecraft se destaca por su estilo gráfico distintivo, su amplia comunidad de jugadores, y la posibilidad de modificar el juego a través de mods, lo que lo convierte en una plataforma versátil para la creatividad y la exploración. Con su jugabilidad accesible y su enfoque en la creatividad, Minecraft ha logrado convertirse en uno de los videojuegos más vendidos de la historia.";
   text_gta5="Grand Theft Auto V (GTA V) es un videojuego de acción y aventura desarrollado por Rockstar North y lanzado en 2013. Ambientado en la ficticia ciudad de Los Santos, que es un reflejo de Los Ángeles, el juego sigue la vida de tres protagonistas: Michael De Santa, un excriminal que intenta vivir una vida normal; Franklin Clinton, un joven que busca mejorar su situación en un entorno complicadoy Trevor Philips, un sociopatía violento y unpredictable.";
   text_blb="Call of Duty: Black Ops II fue aclamado por la crítica y se convirtió en uno de los títulos más exitosos de la franquicia, siendo reconocido por su innovadora narrativa y su adictivo modo multijugador.";
+  icon_play="logo-playstation";
+  icon_xbox="logo-xbox";
+  icon_win="logo-windows";
 }
