@@ -9,6 +9,8 @@ export class SegundaPaginaPage implements OnInit {
 
   constructor() { }
 
+  iconoCasa = "home-outline";
+
   ngOnInit() {
   }
 

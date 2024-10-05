@@ -1,15 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="barraHerramientas" color="blue">
-    <ion-title class="titulo"> <ion-icon [name]=iconoCasa class="iconoBarraHerramientas"></ion-icon>INICIO</ion-title>
+    <ion-title class="titulo">INICIO</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="contenidoPagInicio" color="dark">
+<ion-content [fullscreen]="true" class="contenidoPagInicio">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Inicio</ion-title>
     </ion-toolbar>
   </ion-header>
+
   <div class="boton1">
     <button routerLink = "/segunda-pagina" class="botonPag1">SOBRE NOSOTROS
       <ion-icon [name]=iconoBoton1 class="iconoBoton"></ion-icon>
@@ -34,6 +35,12 @@
     </a>
     <a [href]=enlaceWhatsapp target="_blank">
       <ion-icon [name]=iconowhatsapp class="whatsapp"></ion-icon>
+    </a>
+    <a [href]=enlaceTikTok target="_blank">
+      <ion-icon [name]=iconoTikTok class="tiktok"></ion-icon>
+    </a>
+    <a [href]=enlaceGmail target="_blank">
+      <ion-icon [name]=iconoGmail class="gmail"></ion-icon>
     </a>
   </div>
 </ion-content>
