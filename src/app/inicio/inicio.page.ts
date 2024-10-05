@@ -9,8 +9,6 @@ export class InicioPage implements OnInit {
 
   constructor() { }
 
-  imgInicio ="../../assets/logo.jpg";
-
   //Iconos Botones Pagina Inicio
   iconoBoton1 = "person-outline";
   iconoBoton2 = "game-controller-outline";

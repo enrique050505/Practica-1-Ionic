@@ -1,17 +1,24 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>SegundaPagina</ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button [icon]=iconoCasa routerLink="/inicio"></ion-back-button>
-      <ion-title></ion-title>
-    </ion-buttons>
+  <ion-toolbar class="barraHerramientasPagina2" color="blue">
+    <ion-title class="tituloPagina2">Descubre PlayVibe</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button [icon]=iconoCasa routerLink="/inicio" class="iconoBoton"></ion-back-button>
+        <ion-title></ion-title>
+      </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="dark">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">SegundaPagina</ion-title>
+      <ion-title size="large">Descubre PlayVibe</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <div class="descripcionEmpresa">
+
+    <ion-textarea [(ngModel)]="descripcion" rows="4" readonly></ion-textarea>
+    <img [src]=imgLogo alt="Logo PlayVibe" class="logoPlayVibe">
+  </div>
+
 </ion-content>
