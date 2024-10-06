@@ -16,9 +16,18 @@
   </ion-header>
 
   <div class="descripcionEmpresa">
-
-    <ion-textarea [(ngModel)]="descripcion" rows="4" readonly></ion-textarea>
+    <ion-textarea [(ngModel)]="descripcion" rows="4" readonly class="descripcion"></ion-textarea>
     <img [src]=imgLogo alt="Logo PlayVibe" class="logoPlayVibe">
   </div>
 
+  <div class="contenedorEstadisticas">
+    <h2 class="tituloEstadisticas">Lo Mejor de PlayVibe</h2>
+    <ion-list class="listaEstadisticas">
+      <ion-item *ngFor="let i of estadisticas">
+        <ion-icon [name]="i.icono" slot="start"></ion-icon>
+        <h3 class="nombre">{{i.nombre}}</h3>
+        <h3 class="valor">{{i.valor}}</h3>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>
