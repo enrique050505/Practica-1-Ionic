@@ -31,4 +31,5 @@ export class Tab2Page {
   icon_play="logo-playstation";
   icon_xbox="logo-xbox";
   icon_win="logo-windows";
+  icon_compra="cart-outline";
 }
