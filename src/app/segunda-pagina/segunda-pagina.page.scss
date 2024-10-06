@@ -31,18 +31,68 @@
 }
 
 .descripcion{
-   margin-top: -300px;
-   margin-left: 25px;
-   margin-right: 25px;
+   margin-top: -350px;
+   margin-left: 35px;
+   margin-right: 35px;
    font-family: Arial, Helvetica, sans-serif;
    font-size: 20px;
 }
 
 .logoPlayVibe {
+   margin-top: -20px;
    width: 200px;
    height: 200px;
 }
 
-.estadisticas{
-   
+.contenedorEstadisticas{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: left;
+   height: 100%;
+   width: 100%;
+   padding: 10px 20px;
+   margin-top: -450px;
+}
+
+.tituloEstadisticas{
+   font-size: 70px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: #6700b1;
+   margin-top: 120px;
+}
+
+.listaEstadisticas {
+   width: 100%;
+   max-width: 600px;
+   margin: 0 auto;
+   background-color: grey;
+   padding: 10px;
+   border-radius: 15px;
+   border: 5px solid #6700b1;
+}
+
+ion-item{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+   text-align: left;
+}
+
+ion-icon{
+   margin-right: 20px;
+   color:#2196f3;
+}
+
+.valor{
+   margin-left: auto;
+   color:#ff9800;
+   text-align: right;
+   width: 100px;
+}
+
+.nombre{
+   margin-right: 25px;
+   color: #ff9800;
 }
