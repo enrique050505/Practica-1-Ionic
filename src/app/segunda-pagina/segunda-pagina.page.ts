@@ -24,7 +24,7 @@ export class SegundaPaginaPage implements OnInit {
     {nombre: "Juego Más Vendido", valor: "FC 25", icono:"trophy-outline"},
     {nombre: "Premios Ganados", valor: 4, icono:"medal-outline"}
   ];
-
+  
   ngOnInit() { 
   }
 
