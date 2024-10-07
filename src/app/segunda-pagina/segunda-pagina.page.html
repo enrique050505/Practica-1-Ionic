@@ -18,7 +18,7 @@
   <div class="descripcionEmpresa">
     <ion-textarea [(ngModel)]="descripcion" rows="4" readonly class="descripcion"></ion-textarea>
     <img [src]=imgLogo alt="Logo PlayVibe" class="logoPlayVibe">
-    <ion-button expand="block" (click)="abrirModal(true)" class="botonModal">Nuestros Valores</ion-button>
+    <ion-button expand="block" (click)="abrirModal(true)" class="botonModal">Conócenos Mejor</ion-button>
   </div>
 
  <ion-modal [isOpen]="estaModalAbierto" class="modal">
@@ -27,7 +27,7 @@
         <ion-toolbar>
           <ion-title class="tituloModal">Más Sobre Nosotros</ion-title>
           <ion-buttons slot="end">
-            <ion-button (click)="abrirModal(false)">Cerrar</ion-button>
+            <ion-button (click)="abrirModal(false)" class="botonCerrarModal">Cerrar</ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
@@ -46,7 +46,7 @@
   </ion-modal>
 
   <div class="contenedorEstadisticas">
-    <h2 class="tituloEstadisticas">Lo Más Destacado</h2>
+    <h2 class="tituloEstadisticas">Números Relevantes</h2>
     <ion-list class="listaEstadisticas">
       <ion-item *ngFor="let i of estadisticas">
         <ion-icon [name]="i.icono" slot="start"></ion-icon>
