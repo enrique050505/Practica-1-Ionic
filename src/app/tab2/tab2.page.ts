@@ -11,7 +11,7 @@ export class Tab2Page {
   foto_f1="https://static0.hardcoregamerimages.com/wordpress/wp-content/uploads/2024/04/f124champion.jpg";
   foto_fc25="https://i.ytimg.com/vi/pBM2xyco_Kg/maxresdefault.jpg";
   foto_crew="https://image.api.playstation.com/vulcan/ap/rnd/202307/2708/28833b618429cfe5f65d24ea11933ae62e3308ea7d2015be.png";
-  foto_forhonor="https://upload.wikimedia.org/wikipedia/en/d/d5/For_Honor_cover_art.jpg";
+  foto_forhonor="https://i.blogs.es/6a75c5/honor1/1366_2000.jpg";
   foto_blas="https://cdn1.epicgames.com/offer/eddb735dde6b47cda8193f2643cff886/EGS_Blasphemous_TheGameKitchen_S3_2560x1440-f1a83630b91b3f128e8f9dd58f3f8eed";
   foto_blas2="https://image.api.playstation.com/vulcan/ap/rnd/202307/2609/5b7d787deb993232e95a008bed7081f9a824049554ad1bc4.png";
   foto_issac="https://cdn1.epicgames.com/dbf5337d024e457bac68f2059112da86/offer/EGS_TheBindingofIsaacRepentance_NicalisIncEdmundMcmillen_S2-1200x1600-eb480826546ffb2ed1560ceec262b615.jpg";

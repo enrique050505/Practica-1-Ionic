@@ -31,21 +31,22 @@ ion-checkbox {
 .alinear{
   display: flex;
   justify-content: end;
-  margin-top: -300px;
-  margin-right: 100px;
+  margin-top: -200px;
+  margin-right: 700px;
+  font-size: 50px;
 }
 .comprar{
   display: flex;
   justify-content: end;
   margin-top: 0px;
-  margin-right: 100px;
+  margin-right: 700px;
 }
 .carrito{
   font-size: 20px;
   margin-left: 20px;
 }
 .texto{
-  margin-top: 80px;
+  margin-top: 0px;
 }
 ion-toggle {
   --background: #52e319;
