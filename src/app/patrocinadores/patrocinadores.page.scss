@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+ }
+ 
+ .barraHerramientasPatrocinadores {
+    background-color: #ff9800;
+    height: 100%;
+    width: 100%;
+ }
+ 
+ .tituloPatrocinadores{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 100px;
+ }
+
+ .iconoBoton {
+    margin-left: 25px;
+    color: black;
+ }
+
+ .imgPatrocinadores{
+   width: 100%;
+   height: 300px;
+   display: flex;
+   justify-content: row;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ }

@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./segunda-pagina.page.scss'],
 })
 export class SegundaPaginaPage implements OnInit {
-
+  
+  constructor() { }
   iconoCasa = "home-outline";
-
+  iconoPatrocinadores = "card-outline";
+  iconoColaboradores = "people-circle-outline";
+  
   imgLogo ="../../assets/logo.jpg";
 
   descripcion: string = "¡Bienvenido a PlayVibe, tu tienda online de videojuegos! Aquí encontrarás los últimos videojuegos del mercado por precios asequibles, además de estar al tanto de las novedades y tendencias en el mundo de los videojuegos. Desde su lanzamiento a principios de 2021, nuestra plataforma está diseñada para brindarte una experiencia de compra intuitiva y entretenida. ¡¡Únete a nosotros, descubre y disfruta de un mundo lleno de diversión y aventuras digitales!!";
@@ -35,7 +38,6 @@ export class SegundaPaginaPage implements OnInit {
     {nombre: "Premios Ganados", valor: 4, icono:"medal-outline"}
   ];
 
-  constructor() { }
   ngOnInit() { 
   }
 

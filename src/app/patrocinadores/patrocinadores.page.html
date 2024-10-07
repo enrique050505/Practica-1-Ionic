@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="barraHerramientasPatrocinadores" color="blue">
+    <ion-title class="tituloPatrocinadores">PATROCINADORES</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button [icon]=iconoCasa routerLink="/inicio" class="iconoBoton"></ion-back-button>
+      <ion-back-button [icon]=iconoSobreNosotros routerLink="/segunda-pagina" class="iconoBoton"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="dark">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4" *ngFor="let i of patrocinadores">
+        <a [href]=i.url target="_blank">
+          <img [src]="i.img" alt="{{i.nombre}}" class="imgPatrocinadores">
+        </a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

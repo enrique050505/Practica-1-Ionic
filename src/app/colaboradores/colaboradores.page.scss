@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+ }
+ 
+ .barraHerramientasColaboradores {
+    background-color: #ffc107;
+    height: 100%;
+    width: 100%;
+ }
+ 
+ .tituloColaboradores{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 100px;
+ }
+
+ .iconoBoton {
+    margin-left: 25px;
+    color: black;
+ }
+
+ .itemDivider{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 20px 664px;
+    width: 100%;
+ }
+
+ .colaboradores{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+ }
+
+ .colaboradoresThumbnail{
+    width: 370px;
+    height: 370px;
+ }
+
+ .imgColaboradores{
+    width: 370px;
+    height: 370px;
+ }

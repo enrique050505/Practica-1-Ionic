@@ -18,7 +18,15 @@ const routes: Routes = [
   {
     path: 'segunda-pagina',
     loadChildren: () => import('./segunda-pagina/segunda-pagina.module').then( m => m.SegundaPaginaPageModule)
+  },  {
+    path: 'patrocinadores',
+    loadChildren: () => import('./patrocinadores/patrocinadores.module').then( m => m.PatrocinadoresPageModule)
+  },
+  {
+    path: 'colaboradores',
+    loadChildren: () => import('./colaboradores/colaboradores.module').then( m => m.ColaboradoresPageModule)
   }
+
 ];
 @NgModule({
   imports: [

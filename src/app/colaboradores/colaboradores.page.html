@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="barraHerramientasColaboradores" color="blue"> 
+    <ion-title class="tituloColaboradores">COLABORADORES</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button [icon]=iconoCasa routerLink="/inicio" class="iconoBoton"></ion-back-button>
+      <ion-back-button [icon]=iconoSobreNosotros routerLink="/segunda-pagina" class="iconoBoton"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <div class="colaboradores">
+      <ion-item-divider class="itemDivider">Empresas</ion-item-divider>
+      <ion-thumbnail *ngFor="let i of empresasColaboradoras" class="colaboradoresThumbnail">
+        <a [href]=i.url target="_blank">
+          <img [src]="i.img" alt="{{i.nombre}}" class="imgColaboradores">
+        </a>
+      </ion-thumbnail>
+    </div>
+      
+    <div class="colaboradores">
+      <ion-item-divider class="itemDivider">Streamers</ion-item-divider>
+      <ion-thumbnail *ngFor="let i of streamersColaboradores" class="colaboradoresThumbnail">
+        <a [href]=i.url target="_blank">
+          <img [src]="i.img" alt="{{i.nombre}}" class="imgColaboradores">
+        </a>
+      </ion-thumbnail>
+    </div>
+  </ion-list>
+</ion-content>
