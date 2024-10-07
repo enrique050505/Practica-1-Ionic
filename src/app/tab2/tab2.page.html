@@ -2,47 +2,75 @@
   <ion-toolbar  color="blue">
     <ion-title class="titulo">Tienda</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="segunda-pagina" icon="chevron-back-outline" class="flecha"></ion-back-button>
+      <ion-back-button defaultHref="inicio" icon="chevron-back-outline" class="flecha"></ion-back-button>
     </ion-buttons>
-    <ion-chip>
+    <ion-chip routerLink="/tabs/tab3">
       <ion-avatar class="avatar">
-        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        <img alt="Silhouette of a person's head"  src="https://ionicframework.com/docs/img/demos/avatar.svg" />
       </ion-avatar>
       <ion-label class="text_usuario">Usuario</ion-label>
     </ion-chip>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true" class="contenido">
-  <ion-list color="blue">
+  <ion-list color="blue" class="fondo">
    <ion-card class="carta">
   <img  [src]=foto_f1 width="1000" height="500"/>
-  <ion-card-header>
+    <div class="alinear">
+      <ion-list>
+        <ion-item>
+          <ion-icon [name]=icon_play></ion-icon>
+          <ion-toggle>PlayStation</ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-icon [name]=icon_xbox></ion-icon>
+          <ion-toggle>Xbox</ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-icon [name]=icon_win></ion-icon>
+          <ion-toggle>PC</ion-toggle>
+        </ion-item>
+      </ion-list>
+    </div>
+  <div class="comprar">
+      <ion-card-content>
+        <ion-checkbox>Comprar<ion-icon  class="carrito"[name]=icon_compra ></ion-icon></ion-checkbox>
+      </ion-card-content>
+    </div>
+    <div class="texto">
+    <ion-card-header>
     <ion-card-title>F124</ion-card-title>
     <ion-card-subtitle>24,99€</ion-card-subtitle>
   </ion-card-header>
   <ion-card-content>
    {{text_f1}}
   </ion-card-content>
-  <ion-list>
-    <ion-item>
-      <ion-icon [name]=icon_play></ion-icon>
-      <ion-toggle>PlayStation</ion-toggle>
-    </ion-item>
-    <ion-item>
-      <ion-icon [name]=icon_xbox></ion-icon>
-      <ion-toggle>Xbox</ion-toggle>
-    </ion-item>
-    <ion-item>
-      <ion-icon [name]=icon_win></ion-icon>
-      <ion-toggle>PC</ion-toggle>
-    </ion-item>
-  </ion-list>
-  <ion-card-content>
-    <ion-checkbox>Comprar<ion-icon [name]=icon_compra ></ion-icon></ion-checkbox>
-  </ion-card-content>
+</div>
 </ion-card>
 <ion-card>
   <img  [src]=foto_fc25 width="1000" height="500"/>
+  <div class="alinear">
+    <ion-list>
+      <ion-item>
+        <ion-icon [name]=icon_play></ion-icon>
+        <ion-toggle>PlayStation</ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-icon [name]=icon_xbox></ion-icon>
+        <ion-toggle>Xbox</ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-icon [name]=icon_win></ion-icon>
+        <ion-toggle>PC</ion-toggle>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="comprar">
+    <ion-card-content>
+      <ion-checkbox>Comprar<ion-icon  class="carrito"[name]=icon_compra ></ion-icon></ion-checkbox>
+    </ion-card-content>
+  </div>
+  <div class="texto">
   <ion-card-header>
     <ion-card-title>FC25</ion-card-title>
     <ion-card-subtitle>49,99€</ion-card-subtitle>
@@ -50,8 +78,12 @@
   <ion-card-content>
    {{text_fc25}}
   </ion-card-content>
-  <ion-card-content>
-    <ion-list class="opciones">
+  </div>
+</ion-card>
+<ion-card>
+  <img  [src]=foto_crew width="1000" height="500"/>
+  <div class="alinear">
+    <ion-list>
       <ion-item>
         <ion-icon [name]=icon_play></ion-icon>
         <ion-toggle>PlayStation</ion-toggle>
@@ -65,11 +97,13 @@
         <ion-toggle>PC</ion-toggle>
       </ion-item>
     </ion-list>
-    <ion-checkbox>Comprar<ion-icon [name]=icon_compra ></ion-icon></ion-checkbox>
-  </ion-card-content>
-</ion-card>
-<ion-card>
-  <img  [src]=foto_crew width="1000" height="500"/>
+  </div>
+<div class="comprar">
+    <ion-card-content>
+      <ion-checkbox>Comprar<ion-icon  class="carrito"[name]=icon_compra ></ion-icon></ion-checkbox>
+    </ion-card-content>
+  </div>
+  <div class="texto">
   <ion-card-header>
     <ion-card-title>The Crew 2</ion-card-title>
     <ion-card-subtitle>0,99€</ion-card-subtitle>
@@ -77,8 +111,12 @@
   <ion-card-content>
    {{text_crew}}
   </ion-card-content>
-  <ion-card-content>
-    <ion-list class="opciones">
+  </div>
+</ion-card>
+<ion-card>
+  <img  [src]=foto_forhonor width="800" height="400"/>
+  <div class="alinear">
+    <ion-list>
       <ion-item>
         <ion-icon [name]=icon_play></ion-icon>
         <ion-toggle>PlayStation</ion-toggle>
@@ -92,11 +130,13 @@
         <ion-toggle>PC</ion-toggle>
       </ion-item>
     </ion-list>
-    <ion-checkbox>Comprar<ion-icon [name]=icon_compra ></ion-icon></ion-checkbox>
-  </ion-card-content>
-</ion-card>
-<ion-card>
-  <img  [src]=foto_forhonor width="1000" height="500"/>
+  </div>
+<div class="comprar">
+    <ion-card-content>
+      <ion-checkbox>Comprar<ion-icon  class="carrito"[name]=icon_compra ></ion-icon></ion-checkbox>
+    </ion-card-content>
+  </div>
+  <div class="texto">
   <ion-card-header>
     <ion-card-title>For Honor</ion-card-title>
     <ion-card-subtitle>9,99€</ion-card-subtitle>
@@ -104,8 +144,12 @@
   <ion-card-content>
    {{text_forhonor}}
   </ion-card-content>
-  <ion-card-content>
-    <ion-list class="opciones">
+</div>
+</ion-card>
+<ion-card>
+  <img  [src]=foto_blas width="1000" height="500"/>
+  <div class="alinear">
+    <ion-list>
       <ion-item>
         <ion-icon [name]=icon_play></ion-icon>
         <ion-toggle>PlayStation</ion-toggle>
@@ -119,11 +163,13 @@
         <ion-toggle>PC</ion-toggle>
       </ion-item>
     </ion-list>
-    <ion-checkbox>Comprar</ion-checkbox>
-  </ion-card-content>
-</ion-card>
-<ion-card>
-  <img  [src]=foto_blas width="1000" height="500"/>
+  </div>
+<div class="comprar">
+    <ion-card-content>
+      <ion-checkbox>Comprar<ion-icon  class="carrito"[name]=icon_compra ></ion-icon></ion-checkbox>
+    </ion-card-content>
+  </div>
+  <div class="texto">
   <ion-card-header>
     <ion-card-title>Blasphemous</ion-card-title>
     <ion-card-subtitle>4,99€</ion-card-subtitle>
@@ -131,8 +177,12 @@
   <ion-card-content>
    {{text_blasphemous}}
   </ion-card-content>
-  <ion-card-content>
-    <ion-list class="opciones">
+</div>
+</ion-card>
+<ion-card>
+  <img  [src]=foto_blas2 width="1000" height="500"/>
+  <div class="alinear">
+    <ion-list>
       <ion-item>
         <ion-icon [name]=icon_play></ion-icon>
         <ion-toggle>PlayStation</ion-toggle>
@@ -146,11 +196,13 @@
         <ion-toggle>PC</ion-toggle>
       </ion-item>
     </ion-list>
-    <ion-checkbox>Comprar<ion-icon [name]=icon_compra ></ion-icon></ion-checkbox>
-  </ion-card-content>
-</ion-card>
-<ion-card>
-  <img  [src]=foto_blas2 width="1000" height="500"/>
+  </div>
+<div class="comprar">
+    <ion-card-content>
+      <ion-checkbox>Comprar<ion-icon  class="carrito"[name]=icon_compra ></ion-icon></ion-checkbox>
+    </ion-card-content>
+  </div>
+  <div class="texto">
   <ion-card-header>
     <ion-card-title>Blasphemous2</ion-card-title>
     <ion-card-subtitle>9,99€</ion-card-subtitle>
@@ -158,8 +210,12 @@
   <ion-card-content>
    {{text_blasphemous2}}
   </ion-card-content>
-  <ion-card-content>
-    <ion-list class="opciones">
+</div>
+</ion-card>
+<ion-card>
+  <img  [src]=foto_issac width="1000" height="500"/>
+  <div class="alinear">
+    <ion-list>
       <ion-item>
         <ion-icon [name]=icon_play></ion-icon>
         <ion-toggle>PlayStation</ion-toggle>
@@ -173,11 +229,13 @@
         <ion-toggle>PC</ion-toggle>
       </ion-item>
     </ion-list>
-    <ion-checkbox>Comprar<ion-icon [name]=icon_compra ></ion-icon></ion-checkbox>
-  </ion-card-content>
-</ion-card>
-<ion-card>
-  <img  [src]=foto_issac width="1000" height="500"/>
+  </div>
+<div class="comprar">
+    <ion-card-content>
+      <ion-checkbox>Comprar<ion-icon  class="carrito"[name]=icon_compra ></ion-icon></ion-checkbox>
+    </ion-card-content>
+  </div>
+  <div class="texto">
   <ion-card-header>
     <ion-card-title>The bing of issac</ion-card-title>
     <ion-card-subtitle>2,99€</ion-card-subtitle>
@@ -185,8 +243,12 @@
   <ion-card-content>
    {{text_issac}}
   </ion-card-content>
-  <ion-card-content>
-    <ion-list class="opciones">
+  </div>
+</ion-card>
+<ion-card>
+  <img  [src]=foto_minecraft width="1000" height="500"/>
+  <div class="alinear">
+    <ion-list>
       <ion-item>
         <ion-icon [name]=icon_play></ion-icon>
         <ion-toggle>PlayStation</ion-toggle>
@@ -200,11 +262,13 @@
         <ion-toggle>PC</ion-toggle>
       </ion-item>
     </ion-list>
-    <ion-checkbox>Comprar<ion-icon [name]=icon_compra ></ion-icon></ion-checkbox>
-  </ion-card-content>
-</ion-card>
-<ion-card>
-  <img  [src]=foto_minecraft width="1000" height="500"/>
+  </div>
+<div class="comprar">
+    <ion-card-content>
+      <ion-checkbox>Comprar<ion-icon  class="carrito"[name]=icon_compra ></ion-icon></ion-checkbox>
+    </ion-card-content>
+  </div>
+  <div class="texto">
   <ion-card-header>
     <ion-card-title>Minecraft</ion-card-title>
     <ion-card-subtitle>2,99€</ion-card-subtitle>
@@ -212,8 +276,12 @@
   <ion-card-content>
    {{text_minecraft}}
   </ion-card-content>
-  <ion-card-content>
-    <ion-list class="opciones">
+  </div>
+</ion-card>
+<ion-card>
+  <img  [src]=foto_gta width="1000" height="500"/>
+  <div class="alinear">
+    <ion-list>
       <ion-item>
         <ion-icon [name]=icon_play></ion-icon>
         <ion-toggle>PlayStation</ion-toggle>
@@ -227,11 +295,13 @@
         <ion-toggle>PC</ion-toggle>
       </ion-item>
     </ion-list>
-    <ion-checkbox>Comprar<ion-icon [name]=icon_compra ></ion-icon></ion-checkbox>
-  </ion-card-content>
-</ion-card>
-<ion-card>
-  <img  [src]=foto_gta width="1000" height="500"/>
+  </div>
+<div class="comprar">
+    <ion-card-content>
+      <ion-checkbox>Comprar<ion-icon  class="carrito"[name]=icon_compra ></ion-icon></ion-checkbox>
+    </ion-card-content>
+  </div>
+  <div class="texto">
   <ion-card-header>
     <ion-card-title>GTA5</ion-card-title>
     <ion-card-subtitle>13,99€</ion-card-subtitle>
@@ -239,8 +309,12 @@
   <ion-card-content>
    {{text_gta5}}
   </ion-card-content>
-  <ion-card-content>
-    <ion-list class="opciones">
+</div>
+</ion-card>
+<ion-card>
+  <img  [src]=foto_call width="1000" height="500"/>
+  <div class="alinear">
+    <ion-list>
       <ion-item>
         <ion-icon [name]=icon_play></ion-icon>
         <ion-toggle>PlayStation</ion-toggle>
@@ -254,11 +328,13 @@
         <ion-toggle>PC</ion-toggle>
       </ion-item>
     </ion-list>
-    <ion-checkbox>Comprar<ion-icon [name]=icon_compra ></ion-icon></ion-checkbox>
-  </ion-card-content>
-</ion-card>
-<ion-card>
-  <img  [src]=foto_call width="1000" height="500"/>
+  </div>
+<div class="comprar">
+    <ion-card-content>
+      <ion-checkbox>Comprar<ion-icon  class="carrito"[name]=icon_compra ></ion-icon></ion-checkbox>
+    </ion-card-content>
+  </div>
+  <div class="texto">
   <ion-card-header>
     <ion-card-title>Call Of Duty Black Ops 2</ion-card-title>
     <ion-card-subtitle>19,99€</ion-card-subtitle>
@@ -266,23 +342,7 @@
   <ion-card-content>
    {{text_blb}}
   </ion-card-content>
-  <ion-card-content>
-    <ion-list class="opciones">
-      <ion-item>
-        <ion-icon [name]=icon_play></ion-icon>
-        <ion-toggle>PlayStation</ion-toggle>
-      </ion-item>
-      <ion-item>
-        <ion-icon [name]=icon_xbox></ion-icon>
-        <ion-toggle>Xbox</ion-toggle>
-      </ion-item>
-      <ion-item>
-        <ion-icon [name]=icon_win></ion-icon>
-        <ion-toggle>PC</ion-toggle>
-      </ion-item>
-    </ion-list>
-    <ion-checkbox>Comprar<ion-icon [name]=icon_compra ></ion-icon></ion-checkbox>
-  </ion-card-content>
+</div>
 </ion-card>
   </ion-list>
 </ion-content>

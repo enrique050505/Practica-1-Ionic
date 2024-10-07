@@ -23,5 +23,38 @@ ion-checkbox {
   color: white;
 }
 .contenido{
-  background-image: url(https://i.gifer.com/E8jj.gif);
+  background-image: url(https://i.pinimg.com/originals/16/03/fb/1603fb7077abb9093f4af305b4e5ce79.gif);
+}
+.fondo{
+  background-color: black;
+}
+.alinear{
+  display: flex;
+  justify-content: end;
+  margin-top: -300px;
+  margin-right: 100px;
+}
+.comprar{
+  display: flex;
+  justify-content: end;
+  margin-top: 0px;
+  margin-right: 100px;
+}
+.carrito{
+  font-size: 20px;
+  margin-left: 20px;
+}
+.texto{
+  margin-top: 80px;
+}
+ion-toggle {
+  --background: #52e319;
+  --background-checked: #ff4d00;
+
+  --handle-background: #ec0909;
+  --handle-background-checked: #5ef11a;
+
+}
+ion-card-subtitle{
+ font-size: 20px;
 }
