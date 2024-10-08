@@ -38,5 +38,18 @@
     </ion-list>
   </ng-container>
 
-  
+  <ng-container *ngIf="segmentoSeleccionado === 'novedades'">
+    <ion-list class="listaSegmentos">
+      <ion-item *ngFor="let novedad of novedadesJuegos">
+        <ion-thumbnail class="imgSegment"> 
+          <img [src]=novedad.foto alt={{novedad.nombre}}>
+        </ion-thumbnail>
+        <ion-label class="label">
+          <h2 class="tituloSegment">{{novedad.nombre}}</h2>
+          <p class="descripcionSegment">{{novedad.contenido}}</p>
+          <a [href]=novedad.url target="_blank" class="enlaceSegment">Leer más</a>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
 </ion-content>
