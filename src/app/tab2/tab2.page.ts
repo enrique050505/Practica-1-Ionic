@@ -32,4 +32,6 @@ export class Tab2Page {
   icon_xbox="logo-xbox";
   icon_win="logo-windows";
   icon_compra="cart-outline";
+  iconoCasa = "home-outline";
+  imgUsuario="https://ionicframework.com/docs/img/demos/avatar.svg";
 }

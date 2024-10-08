@@ -19,7 +19,7 @@ export class PatrocinadoresPage implements OnInit {
     { nombre: "PlayStation", img:"../../assets/playStation.jpg", url:"https://www.playstation.com/es-es/"},
     { nombre: "Razer", img:"../../assets/razer.jpg", url:"https://www.razer.com/es-es"},
     { nombre: "NVIDIA", img:"../../assets/nvidia.png", url: "https://www.nvidia.com/es-es/"},
-    { nombre: "PC Componentes", img:"../../assets/pcComponentes.png", url:"https://www.nvidia.com/es-es/"},
+    { nombre: "PC Componentes", img:"../../assets/pcComponentes.png", url:"https://www.pccomponentes.com"},
     { nombre: "EA Sports", img:"../../assets/eaSports.png", url:"https://www.ea.com/es-es"},
     { nombre: "Ubisoft", img:"../../assets/uvisoft.png", url:"https://www.ubisoft.com/es-es/"},
     { nombre: "Epic Games", img:"../../assets/epicGames.png", url:"https://www.epicgames.com/site/es-ES/home"},

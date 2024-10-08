@@ -1,17 +1,20 @@
-<ion-header [translucent]="true" class="cabezera" >
-  <ion-toolbar  color="blue">
-    <ion-title class="titulo">Tienda</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="blue" class="cabecera">
+    <ion-title class="tituloTienda">TIENDA</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="inicio" icon="chevron-back-outline" class="flecha"></ion-back-button>
+      <ion-back-button [icon]=iconoCasa defaultHref="/inicio" class="iconoBoton"></ion-back-button>
     </ion-buttons>
-    <ion-chip routerLink="/tabs/tab3">
-      <ion-avatar class="avatar">
-        <img alt="Silhouette of a person's head"  src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-      </ion-avatar>
-      <ion-label class="text_usuario">Usuario</ion-label>
-    </ion-chip>
+    <ion-buttons slot="end" class="avatar">
+      <ion-chip routerLink="/tabs/tab3">
+        <ion-avatar class="avatarUsuario">
+          <img [src]=imgUsuario alt="Usuario">
+        </ion-avatar>
+        <ion-label class="textoUsuario">Usuario</ion-label>
+      </ion-chip>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
 <ion-content [fullscreen]="true" class="contenido">
   <ion-list color="blue" class="fondo">
    <ion-card class="carta">

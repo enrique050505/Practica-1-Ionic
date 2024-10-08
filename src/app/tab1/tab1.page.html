@@ -52,4 +52,34 @@
       </ion-item>
     </ion-list>
   </ng-container>
+
+  <ng-container *ngIf="segmentoSeleccionado === 'nuevas versiones'">
+    <ion-list class="listaSegmentos">
+      <ion-item *ngFor="let version of versionesNuevas">
+        <ion-thumbnail class="imgSegment"> 
+          <img [src]=version.foto alt={{version.nombre}}>
+        </ion-thumbnail>
+        <ion-label class="label">
+          <h2 class="tituloSegment">{{version.nombre}}</h2>
+          <p class="descripcionSegment">{{version.contenido}}</p>
+          <a [href]=version.url target="_blank" class="enlaceSegment">Leer más</a>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+
+  <ng-container *ngIf="segmentoSeleccionado === 'franquicias'">
+    <ion-list class="listaSegmentos">
+      <ion-item *ngFor="let franquicia of franquicias">
+        <ion-thumbnail class="imgSegment"> 
+          <img [src]=franquicia.foto alt={{franquicia.nombre}}>
+        </ion-thumbnail>
+        <ion-label class="label">
+          <h2 class="tituloSegment">{{franquicia.nombre}}</h2>
+          <p class="descripcionSegment">{{franquicia.contenido}}</p>
+          <a [href]=franquicia.url target="_blank" class="enlaceSegment">Leer más</a>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
 </ion-content>

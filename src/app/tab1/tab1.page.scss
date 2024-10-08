@@ -11,6 +11,7 @@
   font-size: 120px;
   margin-left: 200px;
 }
+
 .iconoBoton {
   margin-left: 25px;
 }
@@ -22,15 +23,18 @@
 .avatarUsuario{
   font-size: 25px;
 }
+
+.textoUsuario{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 ion-content{
   --background: black;
 }
+
 ion-segment-button{
   color: white;
-}
-.textoUsuario{
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .listaSegmentos{
@@ -44,17 +48,20 @@ ion-segment-button{
 .imgSegment{
   width: 600px;
   height: 400px;
+  background-color: #2980B9;
 }
 
 .tituloSegment{
   margin-bottom: 300px;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
+  color: gold;
 }
 
 .descripcionSegment{
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: -280px;
-  color:black;
+  color:white;
+  text-align: justify;
 }
