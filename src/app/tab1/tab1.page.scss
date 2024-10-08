@@ -1,20 +1,58 @@
-.cabezera{
-   background-image: url(https://i.pinimg.com/originals/16/03/fb/1603fb7077abb9093f4af305b4e5ce79.gif);
+.cabecera{
+  background-color: #3D0066;
+  width: 100%;
+  height: 100%;
+}
+
+.tituloNoticias{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  font-size: 120px;
+  margin-left: 200px;
 }
 .contenido{
-    background-img:url(https://e0.pxfuel.com/wallpapers/653/383/desktop-wallpaper-bloodstained-ritual-of-the-night-devs-shifting-resources-to-improve-performance-on-nintendo-switch.jpg);
+    background-img: url(https://e0.pxfuel.com/wallpapers/653/383/desktop-wallpaper-bloodstained-ritual-of-the-night-devs-shifting-resources-to-improve-performance-on-nintendo-switch.jpg);
 }
-.titulo{
-    color:white;
-  }
-  .text_usuario{
-    color: white;
-  }
-  .flecha{
-    color: white;
-  }
-.ion-item-left{
-  background-color: black;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+.iconoBoton {
+  margin-left: 25px;
+}
+
+.avatar {
+  margin-right: 70px;
+}
+
+.avatarUsuario{
+  font-size: 25px;
+}
+
+.textoUsuario{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.listaSegmentos{
+  width: 100%;
+}
+
+.label{
+  margin: 40px 50px;
+}
+
+.imgSegment{
+  width: 600px;
+  height: 400px;
+}
+
+.tituloSegment{
+  margin-bottom: 300px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.descripcionSegment{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -280px;
 }
