@@ -15,29 +15,28 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="contenido">
-  <ion-card *ngFor="let videojuego of videojuegosTienda">
-    <img [src]=videojuego.foto alt={{videojuego.nombre}}>
+<ion-content [fullscreen]="true" color="blue">
+  <ion-card  class="carta" *ngFor="let videojuego of videojuegosTienda">
+    <img class="imagenes" [src]=videojuego.foto alt={{videojuego.nombre}}>
     <ion-card-header>
-      <ion-card-title>{{videojuego.nombre}}</ion-card-title>
-      <ion-card-subtitle>{{videojuego.precio}}</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
+      <ion-card-title class="nombre">{{videojuego.nombre}}</ion-card-title>
+      <ion-card-subtitle class="precio">{{videojuego.precio}}</ion-card-subtitle>
       <h3>{{videojuego.descripcion}}</h3>
-      
-      <ion-item>
+    </ion-card-header>
+    <ion-card-content class="plataformas">
+      <ion-item color="blue" class="opciones">
         <ion-icon [name]=icon_play></ion-icon>
         <ion-toggle>PlayStation</ion-toggle>
       </ion-item>
-      <ion-item>
+      <ion-item color="blue"class="opciones"> 
         <ion-icon [name]=icon_xbox></ion-icon>
         <ion-toggle>Xbox</ion-toggle>
       </ion-item>
-      <ion-item>
+      <ion-item color="blue" class="opciones">
         <ion-icon [name]=icon_win></ion-icon>
         <ion-toggle>PC</ion-toggle>
       </ion-item>
-      <ion-checkbox>Comprar<ion-icon class="carrito" [name]=videojuego.icon_compra ></ion-icon></ion-checkbox>
+      <ion-checkbox class="texto_comprar">Comprar<ion-icon class="carrito" [name]=videojuego.icon_compra ></ion-icon></ion-checkbox>
     </ion-card-content>
   </ion-card>
 </ion-content>

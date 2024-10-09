@@ -33,3 +33,66 @@
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 10px;
 }
+.carta{
+  background-color: black;
+}
+.opciones{
+  background-color: black;
+  text-color:white;
+}
+ion-toggle{
+  color:white;
+  --handle-background: #ec0909;
+  --handle-background-checked: #5ef11a;
+  margin-left: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ion-icon{
+  color:white;
+}
+
+.imagenes{
+  width: 700px;
+  height: 400px;
+}
+.nombre{
+  color:gold;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.plataformas{
+ 
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin-top:-400px;
+    margin-bottom: 250px;
+    margin-left: 800px;
+    font-size: 50px;
+    width: 15%;
+  }
+h3{
+  margin-left: 10px;
+  color: white;
+}
+.precio{
+  margin-left: 10px;
+  color: rgb(0, 233, 241);
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+ion-checkbox {
+  --size: 32px;
+  --checkbox-background-checked: #6815ec;
+}
+
+ion-checkbox::part(container) {
+border-radius: 6px;
+border: 2px solid #6815ec;
+}
+.texto_comprar{
+  font-size: 25px;
+}
