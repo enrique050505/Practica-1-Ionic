@@ -13,7 +13,7 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: white;
   font-size: 120px;
-  margin-left: 200px;
+  margin-left: 170px;
 }
 
 .iconoBoton {
@@ -33,21 +33,25 @@
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 10px;
 }
+
 .carta{
   background-color: black;
 }
+
 .opciones{
   background-color: black;
   text-color:white;
 }
+
 ion-toggle{
   color:white;
   --handle-background: #ec0909;
   --handle-background-checked: #5ef11a;
   margin-left: 20px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 ion-icon{
   color:white;
 }
@@ -55,44 +59,72 @@ ion-icon{
 .imagenes{
   width: 700px;
   height: 400px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
+
 .nombre{
   color:gold;
-  font-size: 28px;
+  font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
+
 .plataformas{
- 
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    margin-top:-400px;
-    margin-bottom: 250px;
-    margin-left: 800px;
-    font-size: 50px;
-    width: 15%;
-  }
-h3{
-  margin-left: 10px;
-  color: white;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  margin-top:-450px;
+  margin-bottom: 250px;
+  margin-left: 800px;
+  font-size: 50px;
+  width: 15%;
 }
+
+h3{
+  margin-left: 25px;
+  margin-right: 25px;
+  color: white;
+  margin-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 18px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
 .precio{
-  margin-left: 10px;
   color: rgb(0, 233, 241);
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 32px;
+  margin-left: 500px;
+  margin-top: -40px;
+  margin-bottom: 20px;
 }
+
 ion-checkbox {
-  --size: 32px;
+  --size: 30px;
   --checkbox-background-checked: #6815ec;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 ion-checkbox::part(container) {
 border-radius: 6px;
 border: 2px solid #6815ec;
 }
+
 .texto_comprar{
   font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.carrito{
+  font-size: 30px;
+  margin-left: 10px;
+  margin-bottom: -7px;
 }

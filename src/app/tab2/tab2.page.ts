@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -6,8 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
-  constructor() {}
   
   icon_play="logo-playstation";
   icon_xbox="logo-xbox";
@@ -27,5 +26,28 @@ export class Tab2Page {
     {nombre: "Dark Souls III", precio:"29,99€", foto:"https://image.api.playstation.com/cdn/EP0700/CUSA03365_00/OFMeAw2KhrdaEZAjW1f3tCIXbogkLpTC.png", descripcion:"Dark Souls III ofrece una experiencia intensa en un mundo sombrío y en ruinas. Los jugadores se pueden enfrentar a varios jefes y deben despertar a los Señores de la Ceniza. Con combates difíciles, el juego desafía a los jugadores a explorar un mundo amplio.", icon_compra:"cart-outline"},
     {nombre: "The Last of Us II", precio:"35,99€", foto:"https://image.api.playstation.com/vulcan/img/rnd/202010/2618/w48z6bzefZPrRcJHc7L8SO66.png", descripcion:"The Last of Us II sigue a Ellie en busca de venganza tras una tragedia personal. El juego se centra en la combinación de acción y exploración en un entorno detallado con una toma de decisiones difíciles que crean una experiencia emocional intensa.", icon_compra:"cart-outline"}
   ]
+  
+  plataformasSeleccionadas = { playstation:false, pc: false, xbox: false};
 
+  constructor(private toastController: ToastController){}
+  async comprar(videojuego: any, plataformas:{ playstation: boolean; pc: boolean; xbox: boolean; }){
+    const{playstation, pc, xbox}=plataformas;
+    if(!playstation && !pc && !xbox){
+      const toast = await this.toastController.create({
+        message: `No has seleccionado nada. Por favor, selecciona alguna plataforma`,
+        duration: 2000,
+        position: 'top',
+        color:'danger'
+      });
+      toast.present();
+      }else{
+      const toast = await this.toastController.create({
+        message:`Has comprado ${videojuego.nombre}`,
+        duration: 2000,
+        position: 'top',
+        color:'success'
+      });
+      toast.present();
+    }
+  }
 }

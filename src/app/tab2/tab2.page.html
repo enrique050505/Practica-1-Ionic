@@ -26,17 +26,20 @@
     <ion-card-content class="plataformas">
       <ion-item color="blue" class="opciones">
         <ion-icon [name]=icon_play></ion-icon>
-        <ion-toggle>PlayStation</ion-toggle>
+        <ion-toggle [(ngModel)]="plataformasSeleccionadas.playstation">PlayStation</ion-toggle>
       </ion-item>
       <ion-item color="blue"class="opciones"> 
         <ion-icon [name]=icon_xbox></ion-icon>
-        <ion-toggle>Xbox</ion-toggle>
+        <ion-toggle [(ngModel)]="plataformasSeleccionadas.xbox">Xbox</ion-toggle>
       </ion-item>
       <ion-item color="blue" class="opciones">
         <ion-icon [name]=icon_win></ion-icon>
-        <ion-toggle>PC</ion-toggle>
+        <ion-toggle [(ngModel)]="plataformasSeleccionadas.pc">PC</ion-toggle>
       </ion-item>
-      <ion-checkbox class="texto_comprar">Comprar<ion-icon class="carrito" [name]=videojuego.icon_compra ></ion-icon></ion-checkbox>
+      <ion-checkbox (ionChange)="comprar(videojuego, plataformasSeleccionadas)" class="texto_comprar">Comprar
+          <ion-icon class="carrito" [name]=videojuego.icon_compra ></ion-icon>
+      </ion-checkbox>
     </ion-card-content>
   </ion-card>
+
 </ion-content>
