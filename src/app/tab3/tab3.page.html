@@ -6,8 +6,8 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true" class="contenido"  color="blue">
-  <ion-list class="contenido" color="blue">
+<ion-content [fullscreen]="true" color="blue">
+  <ion-list class="contenido">
     <ion-item class="email">
       <ion-img [src]=img_gmail class="img_gmail"></ion-img>
       <ion-label position="floating" class="text_gmail">Email</ion-label>
@@ -21,6 +21,8 @@
     <div class="boton">
       <ion-button  expand="full" href="/inicio">Registrarse</ion-button>
     </div>
-    <img [src]=img_banne  class="imag">
+    <div class="imag">
+      <img [src]=img_banne alt="Banner de PlayVibe" class="imag">
+    </div>
   </ion-list>
 </ion-content>

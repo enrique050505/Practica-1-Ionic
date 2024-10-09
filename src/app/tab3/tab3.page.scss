@@ -22,59 +22,59 @@
 .email{
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 100px;
+    margin-top: 25px;
 }
+
 .contraseña{
     margin-left: 100px;
     margin-right: 100px;
- 
 }
-.imag{
 
+.imag{
     display: flex;       
     margin-left: auto;     
     margin-right: auto;    
-    width: 50%;
-    height: 65%;
-                   
+    width: 70%;
+    height: 85%;    
+    margin-top: 20px;       
 }
+
 .boton{
     margin-left: 100px;
     margin-right: 100px;
 }
-.titulo{
-    color:white
-}
-.flecha{
-    color: white;
-  }
+
 .contenido{
     background-image: url(https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2023/09/playstation-5-3129870.jpg?tf=3840x);
     width: 100%;
     height: 100%;
 }
+
 .img_gmail{
     display: flex;
     justify-content: start;
     height: 40px;
     width: 40px;
+    margin-left: -5px;
 }
 .text_gmail{
     display: flex;
     justify-content: center;
-    margin-right: 1170px;
+    margin-right: 1140px;
     margin-top: -50px;
 }
+
 .img_candado{
     display: flex;
     justify-content: start;
     height: 30px;
     width: 30px;
 }
+
 .text_contraseña{
     display: flex;
     justify-content: center;
-    margin-right: 1150px;
+    margin-right: 1100px;
     margin-top: -50px;
 }
 
