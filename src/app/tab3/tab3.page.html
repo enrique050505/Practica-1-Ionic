@@ -1,23 +1,25 @@
-<ion-header [translucent]="true"  class="cabezera" >
-  <ion-toolbar color="blue">
-    <ion-title class="titulo">Inicio</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="blue" class="cabecera">
+    <ion-title class="tituloInicio">REGISTRO</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="inicio" icon="chevron-back-outline" class="flecha" ></ion-back-button>
+      <ion-back-button [icon]=iconoCasa defaultHref="/inicio" class="iconoBoton"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true" class="contenido"  color="blue">
   <ion-list class="contenido" color="blue">
     <ion-item class="email">
-      <ion-label position="floating">Email</ion-label>
+      <ion-img [src]=img_gmail class="img_gmail"></ion-img>
+      <ion-label position="floating" class="text_gmail">Email</ion-label>
       <ion-input  type="email"></ion-input>
     </ion-item>
     <ion-item class="contraseña">
-      <ion-label position="floating">Contraseña</ion-label>
+      <ion-img [src]=img_candado class="img_candado"></ion-img>
+      <ion-label position="floating"  class="text_contraseña">Contraseña</ion-label>
       <ion-input  type="password"></ion-input>
     </ion-item>
     <div class="boton">
-      <ion-button  expand="full">Registrarse</ion-button>
+      <ion-button  expand="full" href="/inicio">Registrarse</ion-button>
     </div>
     <img [src]=img_banne  class="imag">
   </ion-list>

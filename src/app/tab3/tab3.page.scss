@@ -1,3 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+ }
+ .cabecera{
+    background-color: #2196f3;
+    height: 100%;
+    width: 100%;
+}
+ .tituloInicio{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 120px;
+    margin-left: 50px;
+ }
+
+.iconoBoton {
+  margin-left: 25px;
+}
+
 .email{
     margin-left: 100px;
     margin-right: 100px;
@@ -21,9 +42,6 @@
     margin-left: 100px;
     margin-right: 100px;
 }
-.cabezera{
-    background-image: url(https://i.pinimg.com/originals/16/03/fb/1603fb7077abb9093f4af305b4e5ce79.gif);
-}
 .titulo{
     color:white
 }
@@ -35,4 +53,29 @@
     width: 100%;
     height: 100%;
 }
+.img_gmail{
+    display: flex;
+    justify-content: start;
+    height: 40px;
+    width: 40px;
+}
+.text_gmail{
+    display: flex;
+    justify-content: center;
+    margin-right: 1170px;
+    margin-top: -50px;
+}
+.img_candado{
+    display: flex;
+    justify-content: start;
+    height: 30px;
+    width: 30px;
+}
+.text_contraseña{
+    display: flex;
+    justify-content: center;
+    margin-right: 1150px;
+    margin-top: -50px;
+}
+
    
